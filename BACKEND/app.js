@@ -2,7 +2,7 @@ import express from 'express'
 import cors from 'cors'
 import { userSignupData, loginCredentials, getUserDetailsOfUser, getAllImages, getUserImage, deleteImages }from './controllers/userControllers.js'
 import multer from 'multer'
-import bodyParser from 'body-parser'
+
 
 
 
