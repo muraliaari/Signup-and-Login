@@ -27,7 +27,7 @@ const imageScheme =new mongoose.Schema({
     img : String,
     randomNum : Number
 })
-
+    
 const ImageModel = mongoose.model('Image', imageScheme)
 
 
