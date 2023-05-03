@@ -33,7 +33,7 @@ const Login = () => {
       var name = localStorage.setItem('userName', userName)
     }
     try{
-      await axios.post('http://localhost:8000/login', {
+      await axios.post('https://login-and-signup.onrender.com/login', {
         userName,
         password
       }).then(res => {
