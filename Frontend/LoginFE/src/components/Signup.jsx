@@ -41,7 +41,7 @@ const handleName = (event)=>{
     
     try{
       if(name && userName && password){
-      await axios.post('http://localhost:8000/', {
+      await axios.post('https://login-and-signup.onrender.com/', {
       name,
       userName,
       password
