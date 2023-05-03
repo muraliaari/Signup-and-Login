@@ -40,7 +40,7 @@ try{
 
         })
       
-     axios.post('http://localhost:8000/userPage', {
+     axios.post('https://login-and-signup.onrender.com/userPage', {
       userNAme,
       
       
@@ -85,7 +85,7 @@ const handleImages =async(e)=>{
    setRandn(randomNum)
    formdata.append('randomNum', randomNum)
     //console.log(image, 'image')
-    const response = await axios.post("http://localhost:8000/users/add", formdata)
+    const response = await axios.post("https://login-and-signup.onrender.com/users/add", formdata)
     const record = response.data
     //console.log(response.data) //here getting array. destructure it to get the list of the images
     //console.log(image.name, 'form')
@@ -109,7 +109,7 @@ const handleImageList=async()=>{
     const data={
       userNAme
     }
-    const res = await axios.post("http://localhost:8000/image", data )
+    const res = await axios.post("https://login-and-signup.onrender.com/image", data )
    // console.log(state)
   //console.log(res.data)
     setListOfData(res.data)
@@ -151,7 +151,7 @@ const handleRandomNo=(event)=>{
       flag = false
 
     try{
-      let response = await axios.post("http://localhost:8000/deleteImage", data)
+      let response = await axios.post("https://login-and-signup.onrender.com/deleteImage", data)
       //console.log(response.data)
       setListOfData(response.data)
       
